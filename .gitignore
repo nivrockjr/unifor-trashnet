@@ -1,0 +1,20 @@
+# Ambiente Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Dataset: baixado por scripts/baixar_dataset.py
+data/
+
+# Sistema e editores
+.DS_Store
+*.tmp
+
+# Ruído do TensorFlow na saída de erro do treino
+artifacts/treino.err
+.treino_em_andamento
+
+# Modelo do ensaio auxiliar do /255 (54 MB). O resultado fica no JSON;
+# scripts/ensaio_normalizacao.py treina o modelo de novo, em cerca de 30 s, se for preciso.
+artifacts/ensaios/*/modelo.keras
