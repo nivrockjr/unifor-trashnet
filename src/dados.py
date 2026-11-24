@@ -130,7 +130,6 @@ def inspecionar_imagens(raiz: Path, registros: list[dict]) -> dict:
     }
 
 
-
 def duplicatas_por_conteudo(raiz: Path, divisao: dict) -> list[list[dict]]:
     """Grupos de arquivos com o mesmo conteúdo (SHA-256 igual), com a classe e o conjunto de cada um."""
     grupos: dict[str, list[dict]] = {}
@@ -141,6 +140,7 @@ def duplicatas_por_conteudo(raiz: Path, divisao: dict) -> list[list[dict]]:
                 {"arquivo": Path(item["caminho"]).name, "classe": CLASSES[item["rotulo"]], "conjunto": conjunto}
             )
     return [grupo for grupo in grupos.values() if len(grupo) > 1]
+
 
 def dividir_estratificado(registros: list[dict]) -> dict:
     """70/15/15 estratificado. A mesma imagem permanece em um único conjunto."""

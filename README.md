@@ -30,7 +30,7 @@ Repositório: https://github.com/nivrockjr/unifor-trashnet
 | `notebooks/03_resultados.ipynb` | Métricas, figuras e leitura dos resultados |
 | `artifacts/` | Divisão, históricos, modelos, métricas, figuras e o ensaio auxiliar (`artifacts/ensaios/`) |
 
-Os modelos ficam em `artifacts/experimentos/<id>/modelo.keras`. Os dois da MLP têm 54 MB cada, por causa dos 4,7 milhões de parâmetros; os da CNN, 1,2 MB. O registro de cada treino, com semente, histórico, época salva e tempos, fica no `registro.json` da mesma pasta.
+Os modelos ficam em `artifacts/experimentos/<id>/modelo.keras`. Os dois da MLP têm 54 MB cada, por causa dos 4,7 milhões de parâmetros, e os da CNN têm 1,2 MB. O registro de cada treino, com semente, histórico, época salva e tempos, fica no `registro.json` da mesma pasta.
 
 ## Dataset
 
@@ -38,7 +38,7 @@ Use somente o arquivo `dataset-resized.zip` do repositório [TrashNet](https://g
 
 Classes, nesta ordem nas matrizes: glass, paper, cardboard, plastic, metal, trash.
 
-O próprio ZIP tem três pares de fotos idênticas com rótulos diferentes (glass115 e metal91, glass176 e plastic152, glass389 e plastic332). O notebook 01 mostra os pares; eles foram mantidos, e nenhum está no teste.
+O próprio ZIP tem três pares de fotos idênticas com rótulos diferentes (glass115 e metal91, glass176 e plastic152, glass389 e plastic332). O notebook 01 mostra os pares. Eles foram mantidos, e nenhum está no teste.
 
 Citação do dataset: Thung, G.; Yang, M. *TrashNet*. 2017. Disponível em: https://github.com/garythung/trashnet.
 
@@ -141,7 +141,7 @@ Não houve GPU, então não há pico de memória de GPU. Os números de custo de
 
 ## Ensaio auxiliar de normalização
 
-`scripts/ensaio_normalizacao.py` treina a MLP 128 × 96 sem pesos com os pixels só divididos por 255 (sugestão do enunciado) e compara com a normalização dos seis experimentos, apenas na validação. O resultado fica em `artifacts/ensaios/ensaio_normalizacao.json`. Ele não faz parte dos seis experimentos e não usa o conjunto de teste. O modelo desse ensaio (54 MB) não vai para o GitHub; se ele não existir, o script treina de novo, em cerca de 30 segundos.
+`scripts/ensaio_normalizacao.py` treina a MLP 128 × 96 sem pesos com os pixels só divididos por 255 (sugestão do enunciado) e compara com a normalização dos seis experimentos, apenas na validação. O resultado fica em `artifacts/ensaios/ensaio_normalizacao.json`. Ele não faz parte dos seis experimentos e não usa o conjunto de teste. O modelo desse ensaio (54 MB) não vai para o GitHub. Se ele não existir, o script treina de novo, em cerca de 30 segundos.
 
 ```bash
 python scripts/ensaio_normalizacao.py

@@ -35,7 +35,7 @@ def trava_de_treino():
         if dono and psutil.pid_exists(dono):
             raise SystemExit(
                 f"Já existe um treino em andamento (processo {dono}). "
-                "Espere ele terminar; dois treinos juntos distorcem a medição de tempo."
+                "Espere ele terminar. Dois treinos juntos distorcem a medição de tempo."
             )
         TRAVA_TREINO.unlink(missing_ok=True)
     try:

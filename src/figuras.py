@@ -14,7 +14,7 @@ import matplotlib
 # Backend fixo: as figuras saem iguais no terminal, no notebook e em qualquer sistema.
 matplotlib.use("Agg")
 
-import matplotlib.pyplot as plt  # noqa: E402
+import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.lines import Line2D
 from matplotlib.ticker import FuncFormatter
@@ -301,6 +301,3 @@ def gerar_todas(raiz: Path, eda: dict, divisao: dict, resultado: dict) -> None:
     figura_matrizes(resultado)
     figura_efeito_resolucao(resultado)
     figura_erros(resultado["erros"], raiz)
-    # Nomes antigos, substituídos pela figura única de efeito da resolução.
-    for antigo in ("efeito_resolucao_desempenho.png", "efeito_resolucao_custo.png"):
-        (FIGURAS / antigo).unlink(missing_ok=True)

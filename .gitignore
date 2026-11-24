@@ -15,6 +15,6 @@ data/
 artifacts/treino.err
 .treino_em_andamento
 
-# Modelo do ensaio auxiliar do /255 (54 MB). O resultado fica no JSON;
-# scripts/ensaio_normalizacao.py treina o modelo de novo, em cerca de 30 s, se for preciso.
+# Modelo do ensaio auxiliar do /255 (54 MB). O resultado fica no JSON.
+# Se for preciso, scripts/ensaio_normalizacao.py treina o modelo de novo, em cerca de 30 s.
 artifacts/ensaios/*/modelo.keras

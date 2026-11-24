@@ -53,7 +53,7 @@ DATASET_URL_ALTERNATIVA = (
     "https://huggingface.co/datasets/garythung/trashnet/resolve/main/dataset-resized.zip"
 )
 # SHA-256 dos dois ZIPs conferidos em 17/11/2026. Os dois têm as mesmas 2.527 imagens
-# (mesmos nomes e mesmo CRC de cada arquivo); só o empacotamento do ZIP difere.
+# (mesmos nomes e mesmo CRC de cada arquivo). Só o empacotamento do ZIP difere.
 ZIP_SHA256_ACEITOS = {
     "0bf472790f8b20e5c950d5b5012a9d38af0d3392efd65f8ce171334fc16b07c2": "GitHub garythung/trashnet",
     "c060e8abfe5d6de0578ca15be1ed8ad0794a865d333c3473d53d1d9ad6e38b8c": "espelho no Hugging Face",
