@@ -1,0 +1,34 @@
+{
+  "total_arquivos": 2527,
+  "total_validos": 2527,
+  "problemas": [],
+  "modos": {
+    "RGB": 2527
+  },
+  "dimensoes": {
+    "512x384": 2527
+  },
+  "canais": {
+    "3": 2527
+  },
+  "formatos": {
+    "JPEG": 2527
+  },
+  "contagem_classes": {
+    "glass": 501,
+    "paper": 594,
+    "cardboard": 403,
+    "plastic": 482,
+    "metal": 410,
+    "trash": 137
+  },
+  "raiz_dataset": "data/dataset-resized",
+  "semente": 42,
+  "observacoes": [
+    "Imagens com falha de leitura são excluídas antes da divisão.",
+    "Todas as imagens deste ZIP já estão em RGB JPEG 512×384.",
+    "A divisão é estratificada e reutilizada por todos os experimentos.",
+    "Normalização fixa: pixel/255 - 0,5, sem estatísticas calculadas nos dados.",
+    "Não há aumento de dados nos experimentos controlados, para isolar arquitetura, pesos e resolução."
+  ]
+}

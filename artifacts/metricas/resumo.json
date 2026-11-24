@@ -1,0 +1,1437 @@
+{
+  "criterio_selecao": "Maior F1 macro no conjunto de validação. O teste não entra na escolha.",
+  "modelo_escolhido": "cnn_256x192",
+  "f1_macro_validacao_escolhido": 0.7317375286825923,
+  "experimentos": [
+    {
+      "id": "mlp_128x96",
+      "arquitetura": "mlp",
+      "resolucao": "128x96",
+      "pesos_classe": false,
+      "validacao": {
+        "acuracia": 0.45118733509234826,
+        "f1_macro": 0.3735483405483406,
+        "por_classe": [
+          {
+            "classe": "glass",
+            "precisao": 0.4166666666666667,
+            "recall": 0.13333333333333333,
+            "f1": 0.20202020202020202,
+            "suporte": 75
+          },
+          {
+            "classe": "paper",
+            "precisao": 0.5494505494505495,
+            "recall": 0.5617977528089888,
+            "f1": 0.5555555555555556,
+            "suporte": 89
+          },
+          {
+            "classe": "cardboard",
+            "precisao": 0.7254901960784313,
+            "recall": 0.6065573770491803,
+            "f1": 0.6607142857142857,
+            "suporte": 61
+          },
+          {
+            "classe": "plastic",
+            "precisao": 0.3146067415730337,
+            "recall": 0.7777777777777778,
+            "f1": 0.448,
+            "suporte": 72
+          },
+          {
+            "classe": "metal",
+            "precisao": 0.5142857142857142,
+            "recall": 0.29508196721311475,
+            "f1": 0.375,
+            "suporte": 61
+          },
+          {
+            "classe": "trash",
+            "precisao": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "suporte": 21
+          }
+        ],
+        "matriz": [
+          [
+            10,
+            11,
+            5,
+            44,
+            5,
+            0
+          ],
+          [
+            1,
+            50,
+            3,
+            32,
+            3,
+            0
+          ],
+          [
+            1,
+            9,
+            37,
+            12,
+            2,
+            0
+          ],
+          [
+            2,
+            11,
+            0,
+            56,
+            3,
+            0
+          ],
+          [
+            9,
+            8,
+            4,
+            22,
+            18,
+            0
+          ],
+          [
+            1,
+            2,
+            2,
+            12,
+            4,
+            0
+          ]
+        ]
+      },
+      "teste": {
+        "acuracia": 0.4236842105263158,
+        "f1_macro": 0.3415270706566371,
+        "por_classe": [
+          {
+            "classe": "glass",
+            "precisao": 0.2608695652173913,
+            "recall": 0.07894736842105263,
+            "f1": 0.12121212121212122,
+            "suporte": 76
+          },
+          {
+            "classe": "paper",
+            "precisao": 0.4722222222222222,
+            "recall": 0.5730337078651685,
+            "f1": 0.5177664974619289,
+            "suporte": 89
+          },
+          {
+            "classe": "cardboard",
+            "precisao": 0.78,
+            "recall": 0.65,
+            "f1": 0.7090909090909091,
+            "suporte": 60
+          },
+          {
+            "classe": "plastic",
+            "precisao": 0.30994152046783624,
+            "recall": 0.726027397260274,
+            "f1": 0.4344262295081967,
+            "suporte": 73
+          },
+          {
+            "classe": "metal",
+            "precisao": 0.42857142857142855,
+            "recall": 0.1935483870967742,
+            "f1": 0.26666666666666666,
+            "suporte": 62
+          },
+          {
+            "classe": "trash",
+            "precisao": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "suporte": 20
+          }
+        ],
+        "matriz": [
+          [
+            6,
+            18,
+            3,
+            44,
+            5,
+            0
+          ],
+          [
+            0,
+            51,
+            1,
+            34,
+            3,
+            0
+          ],
+          [
+            4,
+            6,
+            39,
+            9,
+            2,
+            0
+          ],
+          [
+            5,
+            11,
+            3,
+            53,
+            1,
+            0
+          ],
+          [
+            6,
+            17,
+            4,
+            23,
+            12,
+            0
+          ],
+          [
+            2,
+            5,
+            0,
+            8,
+            5,
+            0
+          ]
+        ]
+      },
+      "relatorio_teste": "              precision    recall  f1-score   support\n\n       glass       0.26      0.08      0.12        76\n       paper       0.47      0.57      0.52        89\n   cardboard       0.78      0.65      0.71        60\n     plastic       0.31      0.73      0.43        73\n       metal       0.43      0.19      0.27        62\n       trash       0.00      0.00      0.00        20\n\n    accuracy                           0.42       380\n   macro avg       0.38      0.37      0.34       380\nweighted avg       0.42      0.42      0.38       380\n",
+      "acuracia_treino": 0.5124434389140271,
+      "classes_sem_previsao": {
+        "validacao": [
+          "trash"
+        ],
+        "teste": [
+          "trash"
+        ]
+      },
+      "parametros": 4727366,
+      "tamanho_modelo_bytes": 56763619,
+      "epocas_executadas": 33,
+      "epocas_maximas": 60,
+      "parou_pela_paciencia": true,
+      "epoca_modelo_salvo": 28,
+      "tempo_total_s": 42.196085377996496,
+      "tempo_medio_epoca_s": 1.2786692538786817,
+      "pico_memoria_bytes": 471877144,
+      "medicao_memoria": "macOS: ri_lifetime_max_phys_footprint, lido com proc_pid_rusage. É o pico do valor da coluna Memória do Monitor de Atividade e conta também a memória comprimida ou enviada ao swap, que o RSS deixa de fora.",
+      "lote": 16,
+      "hardware": {
+        "sistema": "macOS-27.0-arm64-arm-64bit",
+        "processador": "Apple M2",
+        "nucleos_fisicos": 8,
+        "nucleos_logicos": 8,
+        "ram_total_gb": 8.0,
+        "gpus": [],
+        "observacao_gpu": "Treinamento executado na CPU. O TensorFlow não encontrou GPU utilizável.",
+        "tensorflow": "2.21.0",
+        "keras": "3.15.1"
+      }
+    },
+    {
+      "id": "mlp_128x96_pesos",
+      "arquitetura": "mlp",
+      "resolucao": "128x96",
+      "pesos_classe": true,
+      "validacao": {
+        "acuracia": 0.39313984168865435,
+        "f1_macro": 0.3635847800639563,
+        "por_classe": [
+          {
+            "classe": "glass",
+            "precisao": 0.35714285714285715,
+            "recall": 0.06666666666666667,
+            "f1": 0.11235955056179775,
+            "suporte": 75
+          },
+          {
+            "classe": "paper",
+            "precisao": 0.5483870967741935,
+            "recall": 0.19101123595505617,
+            "f1": 0.2833333333333333,
+            "suporte": 89
+          },
+          {
+            "classe": "cardboard",
+            "precisao": 0.7272727272727273,
+            "recall": 0.6557377049180327,
+            "f1": 0.6896551724137931,
+            "suporte": 61
+          },
+          {
+            "classe": "plastic",
+            "precisao": 0.2909090909090909,
+            "recall": 0.8888888888888888,
+            "f1": 0.4383561643835616,
+            "suporte": 72
+          },
+          {
+            "classe": "metal",
+            "precisao": 0.5185185185185185,
+            "recall": 0.22950819672131148,
+            "f1": 0.3181818181818182,
+            "suporte": 61
+          },
+          {
+            "classe": "trash",
+            "precisao": 0.28125,
+            "recall": 0.42857142857142855,
+            "f1": 0.33962264150943394,
+            "suporte": 21
+          }
+        ],
+        "matriz": [
+          [
+            5,
+            3,
+            4,
+            50,
+            3,
+            10
+          ],
+          [
+            3,
+            17,
+            4,
+            55,
+            7,
+            3
+          ],
+          [
+            2,
+            2,
+            40,
+            16,
+            1,
+            0
+          ],
+          [
+            1,
+            2,
+            1,
+            64,
+            2,
+            2
+          ],
+          [
+            2,
+            7,
+            4,
+            26,
+            14,
+            8
+          ],
+          [
+            1,
+            0,
+            2,
+            9,
+            0,
+            9
+          ]
+        ]
+      },
+      "teste": {
+        "acuracia": 0.33157894736842103,
+        "f1_macro": 0.30924270174270174,
+        "por_classe": [
+          {
+            "classe": "glass",
+            "precisao": 0.21428571428571427,
+            "recall": 0.039473684210526314,
+            "f1": 0.06666666666666667,
+            "suporte": 76
+          },
+          {
+            "classe": "paper",
+            "precisao": 0.34782608695652173,
+            "recall": 0.0898876404494382,
+            "f1": 0.14285714285714285,
+            "suporte": 89
+          },
+          {
+            "classe": "cardboard",
+            "precisao": 0.74,
+            "recall": 0.6166666666666667,
+            "f1": 0.6727272727272727,
+            "suporte": 60
+          },
+          {
+            "classe": "plastic",
+            "precisao": 0.24603174603174602,
+            "recall": 0.8493150684931506,
+            "f1": 0.38153846153846155,
+            "suporte": 73
+          },
+          {
+            "classe": "metal",
+            "precisao": 0.38461538461538464,
+            "recall": 0.08064516129032258,
+            "f1": 0.13333333333333333,
+            "suporte": 62
+          },
+          {
+            "classe": "trash",
+            "precisao": 0.39285714285714285,
+            "recall": 0.55,
+            "f1": 0.4583333333333333,
+            "suporte": 20
+          }
+        ],
+        "matriz": [
+          [
+            3,
+            3,
+            3,
+            61,
+            1,
+            5
+          ],
+          [
+            3,
+            8,
+            2,
+            71,
+            3,
+            2
+          ],
+          [
+            0,
+            2,
+            37,
+            15,
+            4,
+            2
+          ],
+          [
+            4,
+            2,
+            3,
+            62,
+            0,
+            2
+          ],
+          [
+            4,
+            7,
+            4,
+            36,
+            5,
+            6
+          ],
+          [
+            0,
+            1,
+            1,
+            7,
+            0,
+            11
+          ]
+        ]
+      },
+      "relatorio_teste": "              precision    recall  f1-score   support\n\n       glass       0.21      0.04      0.07        76\n       paper       0.35      0.09      0.14        89\n   cardboard       0.74      0.62      0.67        60\n     plastic       0.25      0.85      0.38        73\n       metal       0.38      0.08      0.13        62\n       trash       0.39      0.55      0.46        20\n\n    accuracy                           0.33       380\n   macro avg       0.39      0.37      0.31       380\nweighted avg       0.37      0.33      0.27       380\n",
+      "acuracia_treino": 0.4264705882352941,
+      "classes_sem_previsao": {
+        "validacao": [],
+        "teste": []
+      },
+      "parametros": 4727366,
+      "tamanho_modelo_bytes": 56763619,
+      "epocas_executadas": 19,
+      "epocas_maximas": 60,
+      "parou_pela_paciencia": true,
+      "epoca_modelo_salvo": 14,
+      "tempo_total_s": 24.469528915986302,
+      "tempo_medio_epoca_s": 1.2878699429466476,
+      "pico_memoria_bytes": 473073272,
+      "medicao_memoria": "macOS: ri_lifetime_max_phys_footprint, lido com proc_pid_rusage. É o pico do valor da coluna Memória do Monitor de Atividade e conta também a memória comprimida ou enviada ao swap, que o RSS deixa de fora.",
+      "lote": 16,
+      "hardware": {
+        "sistema": "macOS-27.0-arm64-arm-64bit",
+        "processador": "Apple M2",
+        "nucleos_fisicos": 8,
+        "nucleos_logicos": 8,
+        "ram_total_gb": 8.0,
+        "gpus": [],
+        "observacao_gpu": "Treinamento executado na CPU. O TensorFlow não encontrou GPU utilizável.",
+        "tensorflow": "2.21.0",
+        "keras": "3.15.1"
+      }
+    },
+    {
+      "id": "cnn_128x96",
+      "arquitetura": "cnn",
+      "resolucao": "128x96",
+      "pesos_classe": false,
+      "validacao": {
+        "acuracia": 0.7282321899736148,
+        "f1_macro": 0.6907106852996963,
+        "por_classe": [
+          {
+            "classe": "glass",
+            "precisao": 0.5979381443298969,
+            "recall": 0.7733333333333333,
+            "f1": 0.6744186046511628,
+            "suporte": 75
+          },
+          {
+            "classe": "paper",
+            "precisao": 0.7857142857142857,
+            "recall": 0.8651685393258427,
+            "f1": 0.8235294117647058,
+            "suporte": 89
+          },
+          {
+            "classe": "cardboard",
+            "precisao": 0.92,
+            "recall": 0.7540983606557377,
+            "f1": 0.8288288288288288,
+            "suporte": 61
+          },
+          {
+            "classe": "plastic",
+            "precisao": 0.8032786885245902,
+            "recall": 0.6805555555555556,
+            "f1": 0.7368421052631579,
+            "suporte": 72
+          },
+          {
+            "classe": "metal",
+            "precisao": 0.6190476190476191,
+            "recall": 0.639344262295082,
+            "f1": 0.6290322580645161,
+            "suporte": 61
+          },
+          {
+            "classe": "trash",
+            "precisao": 0.7,
+            "recall": 0.3333333333333333,
+            "f1": 0.45161290322580644,
+            "suporte": 21
+          }
+        ],
+        "matriz": [
+          [
+            58,
+            2,
+            1,
+            6,
+            7,
+            1
+          ],
+          [
+            4,
+            77,
+            1,
+            3,
+            4,
+            0
+          ],
+          [
+            4,
+            4,
+            46,
+            1,
+            5,
+            1
+          ],
+          [
+            8,
+            7,
+            1,
+            49,
+            6,
+            1
+          ],
+          [
+            15,
+            5,
+            1,
+            1,
+            39,
+            0
+          ],
+          [
+            8,
+            3,
+            0,
+            1,
+            2,
+            7
+          ]
+        ]
+      },
+      "teste": {
+        "acuracia": 0.7157894736842105,
+        "f1_macro": 0.6566724759790441,
+        "por_classe": [
+          {
+            "classe": "glass",
+            "precisao": 0.5663716814159292,
+            "recall": 0.8421052631578947,
+            "f1": 0.6772486772486772,
+            "suporte": 76
+          },
+          {
+            "classe": "paper",
+            "precisao": 0.7722772277227723,
+            "recall": 0.8764044943820225,
+            "f1": 0.8210526315789474,
+            "suporte": 89
+          },
+          {
+            "classe": "cardboard",
+            "precisao": 0.9215686274509803,
+            "recall": 0.7833333333333333,
+            "f1": 0.8468468468468469,
+            "suporte": 60
+          },
+          {
+            "classe": "plastic",
+            "precisao": 0.8431372549019608,
+            "recall": 0.589041095890411,
+            "f1": 0.6935483870967742,
+            "suporte": 73
+          },
+          {
+            "classe": "metal",
+            "precisao": 0.631578947368421,
+            "recall": 0.5806451612903226,
+            "f1": 0.6050420168067226,
+            "suporte": 62
+          },
+          {
+            "classe": "trash",
+            "precisao": 0.5714285714285714,
+            "recall": 0.2,
+            "f1": 0.2962962962962963,
+            "suporte": 20
+          }
+        ],
+        "matriz": [
+          [
+            64,
+            0,
+            0,
+            2,
+            10,
+            0
+          ],
+          [
+            6,
+            78,
+            1,
+            2,
+            1,
+            1
+          ],
+          [
+            5,
+            4,
+            47,
+            1,
+            2,
+            1
+          ],
+          [
+            13,
+            11,
+            3,
+            43,
+            2,
+            1
+          ],
+          [
+            19,
+            4,
+            0,
+            3,
+            36,
+            0
+          ],
+          [
+            6,
+            4,
+            0,
+            0,
+            6,
+            4
+          ]
+        ]
+      },
+      "relatorio_teste": "              precision    recall  f1-score   support\n\n       glass       0.57      0.84      0.68        76\n       paper       0.77      0.88      0.82        89\n   cardboard       0.92      0.78      0.85        60\n     plastic       0.84      0.59      0.69        73\n       metal       0.63      0.58      0.61        62\n       trash       0.57      0.20      0.30        20\n\n    accuracy                           0.72       380\n   macro avg       0.72      0.65      0.66       380\nweighted avg       0.73      0.72      0.71       380\n",
+      "acuracia_treino": 0.7873303167420814,
+      "classes_sem_previsao": {
+        "validacao": [],
+        "teste": []
+      },
+      "parametros": 101894,
+      "tamanho_modelo_bytes": 1274351,
+      "epocas_executadas": 26,
+      "epocas_maximas": 60,
+      "parou_pela_paciencia": true,
+      "epoca_modelo_salvo": 21,
+      "tempo_total_s": 173.14471787899674,
+      "tempo_medio_epoca_s": 6.6594122261152595,
+      "pico_memoria_bytes": 538510920,
+      "medicao_memoria": "macOS: ri_lifetime_max_phys_footprint, lido com proc_pid_rusage. É o pico do valor da coluna Memória do Monitor de Atividade e conta também a memória comprimida ou enviada ao swap, que o RSS deixa de fora.",
+      "lote": 16,
+      "hardware": {
+        "sistema": "macOS-27.0-arm64-arm-64bit",
+        "processador": "Apple M2",
+        "nucleos_fisicos": 8,
+        "nucleos_logicos": 8,
+        "ram_total_gb": 8.0,
+        "gpus": [],
+        "observacao_gpu": "Treinamento executado na CPU. O TensorFlow não encontrou GPU utilizável.",
+        "tensorflow": "2.21.0",
+        "keras": "3.15.1"
+      }
+    },
+    {
+      "id": "cnn_128x96_pesos",
+      "arquitetura": "cnn",
+      "resolucao": "128x96",
+      "pesos_classe": true,
+      "validacao": {
+        "acuracia": 0.7229551451187335,
+        "f1_macro": 0.7062358645353721,
+        "por_classe": [
+          {
+            "classe": "glass",
+            "precisao": 0.6883116883116883,
+            "recall": 0.7066666666666667,
+            "f1": 0.6973684210526315,
+            "suporte": 75
+          },
+          {
+            "classe": "paper",
+            "precisao": 0.788235294117647,
+            "recall": 0.7528089887640449,
+            "f1": 0.7701149425287356,
+            "suporte": 89
+          },
+          {
+            "classe": "cardboard",
+            "precisao": 0.9411764705882353,
+            "recall": 0.7868852459016393,
+            "f1": 0.8571428571428571,
+            "suporte": 61
+          },
+          {
+            "classe": "plastic",
+            "precisao": 0.8135593220338984,
+            "recall": 0.6666666666666666,
+            "f1": 0.732824427480916,
+            "suporte": 72
+          },
+          {
+            "classe": "metal",
+            "precisao": 0.5625,
+            "recall": 0.7377049180327869,
+            "f1": 0.6382978723404256,
+            "suporte": 61
+          },
+          {
+            "classe": "trash",
+            "precisao": 0.48148148148148145,
+            "recall": 0.6190476190476191,
+            "f1": 0.5416666666666666,
+            "suporte": 21
+          }
+        ],
+        "matriz": [
+          [
+            53,
+            4,
+            1,
+            6,
+            7,
+            4
+          ],
+          [
+            3,
+            67,
+            1,
+            3,
+            13,
+            2
+          ],
+          [
+            3,
+            3,
+            48,
+            2,
+            3,
+            2
+          ],
+          [
+            4,
+            7,
+            1,
+            48,
+            8,
+            4
+          ],
+          [
+            11,
+            3,
+            0,
+            0,
+            45,
+            2
+          ],
+          [
+            3,
+            1,
+            0,
+            0,
+            4,
+            13
+          ]
+        ]
+      },
+      "teste": {
+        "acuracia": 0.6947368421052632,
+        "f1_macro": 0.667251075803803,
+        "por_classe": [
+          {
+            "classe": "glass",
+            "precisao": 0.6091954022988506,
+            "recall": 0.6973684210526315,
+            "f1": 0.6503067484662577,
+            "suporte": 76
+          },
+          {
+            "classe": "paper",
+            "precisao": 0.7802197802197802,
+            "recall": 0.797752808988764,
+            "f1": 0.7888888888888889,
+            "suporte": 89
+          },
+          {
+            "classe": "cardboard",
+            "precisao": 0.8688524590163934,
+            "recall": 0.8833333333333333,
+            "f1": 0.8760330578512396,
+            "suporte": 60
+          },
+          {
+            "classe": "plastic",
+            "precisao": 0.8809523809523809,
+            "recall": 0.5068493150684932,
+            "f1": 0.6434782608695652,
+            "suporte": 73
+          },
+          {
+            "classe": "metal",
+            "precisao": 0.5492957746478874,
+            "recall": 0.6290322580645161,
+            "f1": 0.5864661654135338,
+            "suporte": 62
+          },
+          {
+            "classe": "trash",
+            "precisao": 0.39285714285714285,
+            "recall": 0.55,
+            "f1": 0.4583333333333333,
+            "suporte": 20
+          }
+        ],
+        "matriz": [
+          [
+            53,
+            2,
+            1,
+            1,
+            13,
+            6
+          ],
+          [
+            2,
+            71,
+            3,
+            2,
+            7,
+            4
+          ],
+          [
+            2,
+            1,
+            53,
+            1,
+            1,
+            2
+          ],
+          [
+            11,
+            13,
+            3,
+            37,
+            6,
+            3
+          ],
+          [
+            15,
+            4,
+            1,
+            1,
+            39,
+            2
+          ],
+          [
+            4,
+            0,
+            0,
+            0,
+            5,
+            11
+          ]
+        ]
+      },
+      "relatorio_teste": "              precision    recall  f1-score   support\n\n       glass       0.61      0.70      0.65        76\n       paper       0.78      0.80      0.79        89\n   cardboard       0.87      0.88      0.88        60\n     plastic       0.88      0.51      0.64        73\n       metal       0.55      0.63      0.59        62\n       trash       0.39      0.55      0.46        20\n\n    accuracy                           0.69       380\n   macro avg       0.68      0.68      0.67       380\nweighted avg       0.72      0.69      0.70       380\n",
+      "acuracia_treino": 0.7658371040723982,
+      "classes_sem_previsao": {
+        "validacao": [],
+        "teste": []
+      },
+      "parametros": 101894,
+      "tamanho_modelo_bytes": 1274351,
+      "epocas_executadas": 26,
+      "epocas_maximas": 60,
+      "parou_pela_paciencia": true,
+      "epoca_modelo_salvo": 21,
+      "tempo_total_s": 167.94409199701477,
+      "tempo_medio_epoca_s": 6.459388153731338,
+      "pico_memoria_bytes": 529483384,
+      "medicao_memoria": "macOS: ri_lifetime_max_phys_footprint, lido com proc_pid_rusage. É o pico do valor da coluna Memória do Monitor de Atividade e conta também a memória comprimida ou enviada ao swap, que o RSS deixa de fora.",
+      "lote": 16,
+      "hardware": {
+        "sistema": "macOS-27.0-arm64-arm-64bit",
+        "processador": "Apple M2",
+        "nucleos_fisicos": 8,
+        "nucleos_logicos": 8,
+        "ram_total_gb": 8.0,
+        "gpus": [],
+        "observacao_gpu": "Treinamento executado na CPU. O TensorFlow não encontrou GPU utilizável.",
+        "tensorflow": "2.21.0",
+        "keras": "3.15.1"
+      }
+    },
+    {
+      "id": "cnn_256x192",
+      "arquitetura": "cnn",
+      "resolucao": "256x192",
+      "pesos_classe": false,
+      "validacao": {
+        "acuracia": 0.762532981530343,
+        "f1_macro": 0.7317375286825923,
+        "por_classe": [
+          {
+            "classe": "glass",
+            "precisao": 0.6444444444444445,
+            "recall": 0.7733333333333333,
+            "f1": 0.703030303030303,
+            "suporte": 75
+          },
+          {
+            "classe": "paper",
+            "precisao": 0.8555555555555555,
+            "recall": 0.8651685393258427,
+            "f1": 0.8603351955307262,
+            "suporte": 89
+          },
+          {
+            "classe": "cardboard",
+            "precisao": 0.8909090909090909,
+            "recall": 0.8032786885245902,
+            "f1": 0.8448275862068966,
+            "suporte": 61
+          },
+          {
+            "classe": "plastic",
+            "precisao": 0.6941176470588235,
+            "recall": 0.8194444444444444,
+            "f1": 0.7515923566878981,
+            "suporte": 72
+          },
+          {
+            "classe": "metal",
+            "precisao": 0.7872340425531915,
+            "recall": 0.6065573770491803,
+            "f1": 0.6851851851851852,
+            "suporte": 61
+          },
+          {
+            "classe": "trash",
+            "precisao": 0.75,
+            "recall": 0.42857142857142855,
+            "f1": 0.5454545454545454,
+            "suporte": 21
+          }
+        ],
+        "matriz": [
+          [
+            58,
+            0,
+            3,
+            12,
+            2,
+            0
+          ],
+          [
+            6,
+            77,
+            1,
+            4,
+            1,
+            0
+          ],
+          [
+            2,
+            5,
+            49,
+            2,
+            2,
+            1
+          ],
+          [
+            5,
+            4,
+            0,
+            59,
+            3,
+            1
+          ],
+          [
+            12,
+            3,
+            2,
+            6,
+            37,
+            1
+          ],
+          [
+            7,
+            1,
+            0,
+            2,
+            2,
+            9
+          ]
+        ]
+      },
+      "teste": {
+        "acuracia": 0.7552631578947369,
+        "f1_macro": 0.7176409962040085,
+        "por_classe": [
+          {
+            "classe": "glass",
+            "precisao": 0.6530612244897959,
+            "recall": 0.8421052631578947,
+            "f1": 0.735632183908046,
+            "suporte": 76
+          },
+          {
+            "classe": "paper",
+            "precisao": 0.7821782178217822,
+            "recall": 0.8876404494382022,
+            "f1": 0.8315789473684211,
+            "suporte": 89
+          },
+          {
+            "classe": "cardboard",
+            "precisao": 0.9259259259259259,
+            "recall": 0.8333333333333334,
+            "f1": 0.8771929824561403,
+            "suporte": 60
+          },
+          {
+            "classe": "plastic",
+            "precisao": 0.7647058823529411,
+            "recall": 0.7123287671232876,
+            "f1": 0.7375886524822695,
+            "suporte": 73
+          },
+          {
+            "classe": "metal",
+            "precisao": 0.723404255319149,
+            "recall": 0.5483870967741935,
+            "f1": 0.6238532110091743,
+            "suporte": 62
+          },
+          {
+            "classe": "trash",
+            "precisao": 0.6666666666666666,
+            "recall": 0.4,
+            "f1": 0.5,
+            "suporte": 20
+          }
+        ],
+        "matriz": [
+          [
+            64,
+            1,
+            1,
+            6,
+            4,
+            0
+          ],
+          [
+            3,
+            79,
+            1,
+            3,
+            2,
+            1
+          ],
+          [
+            1,
+            3,
+            50,
+            2,
+            2,
+            2
+          ],
+          [
+            8,
+            10,
+            2,
+            52,
+            0,
+            1
+          ],
+          [
+            18,
+            5,
+            0,
+            5,
+            34,
+            0
+          ],
+          [
+            4,
+            3,
+            0,
+            0,
+            5,
+            8
+          ]
+        ]
+      },
+      "relatorio_teste": "              precision    recall  f1-score   support\n\n       glass       0.65      0.84      0.74        76\n       paper       0.78      0.89      0.83        89\n   cardboard       0.93      0.83      0.88        60\n     plastic       0.76      0.71      0.74        73\n       metal       0.72      0.55      0.62        62\n       trash       0.67      0.40      0.50        20\n\n    accuracy                           0.76       380\n   macro avg       0.75      0.70      0.72       380\nweighted avg       0.76      0.76      0.75       380\n",
+      "acuracia_treino": 0.833710407239819,
+      "classes_sem_previsao": {
+        "validacao": [],
+        "teste": []
+      },
+      "parametros": 101894,
+      "tamanho_modelo_bytes": 1274358,
+      "epocas_executadas": 39,
+      "epocas_maximas": 60,
+      "parou_pela_paciencia": true,
+      "epoca_modelo_salvo": 34,
+      "tempo_total_s": 940.4990166240023,
+      "tempo_medio_epoca_s": 24.115359400615443,
+      "pico_memoria_bytes": 962627528,
+      "medicao_memoria": "macOS: ri_lifetime_max_phys_footprint, lido com proc_pid_rusage. É o pico do valor da coluna Memória do Monitor de Atividade e conta também a memória comprimida ou enviada ao swap, que o RSS deixa de fora.",
+      "lote": 16,
+      "hardware": {
+        "sistema": "macOS-27.0-arm64-arm-64bit",
+        "processador": "Apple M2",
+        "nucleos_fisicos": 8,
+        "nucleos_logicos": 8,
+        "ram_total_gb": 8.0,
+        "gpus": [],
+        "observacao_gpu": "Treinamento executado na CPU. O TensorFlow não encontrou GPU utilizável.",
+        "tensorflow": "2.21.0",
+        "keras": "3.15.1"
+      }
+    },
+    {
+      "id": "cnn_512x384",
+      "arquitetura": "cnn",
+      "resolucao": "512x384",
+      "pesos_classe": false,
+      "validacao": {
+        "acuracia": 0.7308707124010554,
+        "f1_macro": 0.698316666959176,
+        "por_classe": [
+          {
+            "classe": "glass",
+            "precisao": 0.5955056179775281,
+            "recall": 0.7066666666666667,
+            "f1": 0.6463414634146342,
+            "suporte": 75
+          },
+          {
+            "classe": "paper",
+            "precisao": 0.8297872340425532,
+            "recall": 0.8764044943820225,
+            "f1": 0.8524590163934426,
+            "suporte": 89
+          },
+          {
+            "classe": "cardboard",
+            "precisao": 0.9122807017543859,
+            "recall": 0.8524590163934426,
+            "f1": 0.8813559322033898,
+            "suporte": 61
+          },
+          {
+            "classe": "plastic",
+            "precisao": 0.6923076923076923,
+            "recall": 0.75,
+            "f1": 0.72,
+            "suporte": 72
+          },
+          {
+            "classe": "metal",
+            "precisao": 0.6976744186046512,
+            "recall": 0.4918032786885246,
+            "f1": 0.5769230769230769,
+            "suporte": 61
+          },
+          {
+            "classe": "trash",
+            "precisao": 0.5555555555555556,
+            "recall": 0.47619047619047616,
+            "f1": 0.5128205128205128,
+            "suporte": 21
+          }
+        ],
+        "matriz": [
+          [
+            53,
+            3,
+            1,
+            12,
+            5,
+            1
+          ],
+          [
+            2,
+            78,
+            1,
+            5,
+            1,
+            2
+          ],
+          [
+            2,
+            3,
+            52,
+            2,
+            1,
+            1
+          ],
+          [
+            4,
+            7,
+            0,
+            54,
+            5,
+            2
+          ],
+          [
+            21,
+            1,
+            3,
+            4,
+            30,
+            2
+          ],
+          [
+            7,
+            2,
+            0,
+            1,
+            1,
+            10
+          ]
+        ]
+      },
+      "teste": {
+        "acuracia": 0.7315789473684211,
+        "f1_macro": 0.6849250258220437,
+        "por_classe": [
+          {
+            "classe": "glass",
+            "precisao": 0.6436781609195402,
+            "recall": 0.7368421052631579,
+            "f1": 0.6871165644171779,
+            "suporte": 76
+          },
+          {
+            "classe": "paper",
+            "precisao": 0.7835051546391752,
+            "recall": 0.8539325842696629,
+            "f1": 0.8172043010752689,
+            "suporte": 89
+          },
+          {
+            "classe": "cardboard",
+            "precisao": 0.9,
+            "recall": 0.9,
+            "f1": 0.9,
+            "suporte": 60
+          },
+          {
+            "classe": "plastic",
+            "precisao": 0.68,
+            "recall": 0.6986301369863014,
+            "f1": 0.6891891891891891,
+            "suporte": 73
+          },
+          {
+            "classe": "metal",
+            "precisao": 0.7906976744186046,
+            "recall": 0.5483870967741935,
+            "f1": 0.6476190476190476,
+            "suporte": 62
+          },
+          {
+            "classe": "trash",
+            "precisao": 0.3888888888888889,
+            "recall": 0.35,
+            "f1": 0.3684210526315789,
+            "suporte": 20
+          }
+        ],
+        "matriz": [
+          [
+            56,
+            1,
+            0,
+            10,
+            6,
+            3
+          ],
+          [
+            2,
+            76,
+            2,
+            6,
+            1,
+            2
+          ],
+          [
+            2,
+            1,
+            54,
+            2,
+            0,
+            1
+          ],
+          [
+            6,
+            10,
+            3,
+            51,
+            1,
+            2
+          ],
+          [
+            16,
+            3,
+            0,
+            6,
+            34,
+            3
+          ],
+          [
+            5,
+            6,
+            1,
+            0,
+            1,
+            7
+          ]
+        ]
+      },
+      "relatorio_teste": "              precision    recall  f1-score   support\n\n       glass       0.64      0.74      0.69        76\n       paper       0.78      0.85      0.82        89\n   cardboard       0.90      0.90      0.90        60\n     plastic       0.68      0.70      0.69        73\n       metal       0.79      0.55      0.65        62\n       trash       0.39      0.35      0.37        20\n\n    accuracy                           0.73       380\n   macro avg       0.70      0.68      0.68       380\nweighted avg       0.73      0.73      0.73       380\n",
+      "acuracia_treino": 0.790158371040724,
+      "classes_sem_previsao": {
+        "validacao": [],
+        "teste": []
+      },
+      "parametros": 101894,
+      "tamanho_modelo_bytes": 1274364,
+      "epocas_executadas": 36,
+      "epocas_maximas": 60,
+      "parou_pela_paciencia": true,
+      "epoca_modelo_salvo": 31,
+      "tempo_total_s": 3757.9726298329915,
+      "tempo_medio_epoca_s": 104.38812860647198,
+      "pico_memoria_bytes": 3451277224,
+      "medicao_memoria": "macOS: ri_lifetime_max_phys_footprint, lido com proc_pid_rusage. É o pico do valor da coluna Memória do Monitor de Atividade e conta também a memória comprimida ou enviada ao swap, que o RSS deixa de fora.",
+      "lote": 16,
+      "hardware": {
+        "sistema": "macOS-27.0-arm64-arm-64bit",
+        "processador": "Apple M2",
+        "nucleos_fisicos": 8,
+        "nucleos_logicos": 8,
+        "ram_total_gb": 8.0,
+        "gpus": [],
+        "observacao_gpu": "Treinamento executado na CPU. O TensorFlow não encontrou GPU utilizável.",
+        "tensorflow": "2.21.0",
+        "keras": "3.15.1"
+      }
+    }
+  ],
+  "erros": {
+    "experimento": "cnn_256x192",
+    "total_erros_teste": 93,
+    "total_teste": 380,
+    "amostras": [
+      {
+        "caminho": "plastic/plastic364.jpg",
+        "classe_real": "plastic",
+        "classe_prevista": "paper",
+        "probabilidade_prevista": 0.99843829870224
+      },
+      {
+        "caminho": "metal/metal37.jpg",
+        "classe_real": "metal",
+        "classe_prevista": "plastic",
+        "probabilidade_prevista": 0.9441326260566711
+      },
+      {
+        "caminho": "cardboard/cardboard277.jpg",
+        "classe_real": "cardboard",
+        "classe_prevista": "paper",
+        "probabilidade_prevista": 0.9333290457725525
+      },
+      {
+        "caminho": "plastic/plastic79.jpg",
+        "classe_real": "plastic",
+        "classe_prevista": "cardboard",
+        "probabilidade_prevista": 0.9071623086929321
+      },
+      {
+        "caminho": "plastic/plastic120.jpg",
+        "classe_real": "plastic",
+        "classe_prevista": "paper",
+        "probabilidade_prevista": 0.896361231803894
+      },
+      {
+        "caminho": "metal/metal360.jpg",
+        "classe_real": "metal",
+        "classe_prevista": "glass",
+        "probabilidade_prevista": 0.8849923014640808
+      }
+    ]
+  },
+  "zero_division": "precision_recall_fscore_support e f1_score foram chamados com zero_division=0. Se uma classe não receber nenhuma previsão, precisão e F1 dessa classe ficam em 0 em vez de indefinidos.",
+  "zero_division_observado": "mlp_128x96 não previu trash em nenhuma imagem de validação; mlp_128x96 não previu trash em nenhuma imagem de teste. Nesses casos a precisão e o F1 da classe ficaram em 0.",
+  "acuracia_treino_metodo": "Acurácia do modelo salvo nas imagens de treino, com o dropout desligado (modo de previsão). A acurácia de treino do histórico é outra medida: a média ao longo da época, com dropout ligado."
+}
