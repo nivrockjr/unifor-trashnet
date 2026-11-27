@@ -8,10 +8,10 @@ Repositório: https://github.com/nivrockjr/unifor-trashnet
 
 | Nome | Matrícula |
 | --- | --- |
-| Alana Fontenelle Dantas de Alencar | 2527094 |
-| Darlan Guedes de Almeida | 2524916 |
 | Elayne Ellen Teotonio Barbosa | 2523541 |
 | Felipe Álex Gomes Nobre | 2523588 |
+| Gadely Marino Camacho | 2523611 |
+| Jéssica Andreia de Moura Bezerra | 2523555 |
 | Nivaldo Rocha Lima | 2513690 |
 | Roberto Kelsen Campos Cordeiro | 2526332 |
 
